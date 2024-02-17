@@ -53,7 +53,7 @@ userSchema.pre("save", async function (next) {
     this.password = await bcrypt.hash(this.password, 10);
   }
 
-  // for watch history i want if already watch remove from watchHistory array and insert at front 
+  // for watch history i want if already watch remove from watchHistory array and insert at front ww
   next();
 });
 
