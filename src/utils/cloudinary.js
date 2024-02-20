@@ -29,3 +29,23 @@ const uploadonCloudinary = async (localFilePath) => {
 }
 
 export {uploadonCloudinary}
+
+
+
+
+
+
+
+// The `uploadonCloudinary` function returns a Promise that resolves to an object with the following properties:
+
+// * `public_id`: The unique identifier of the uploaded image on Cloudinary.
+// * `url`: The URL of the uploaded image on Cloudinary.
+// * `secure_url`: The secure URL of the uploaded image on Cloudinary.
+// * `width`: The width of the uploaded image in pixels.
+// * `height`: The height of the uploaded image in pixels.
+// * `format`: The format of the uploaded image (e.g., "jpg", "png").
+// * `resource_type`: The type of the uploaded resource (e.g., "image").
+
+// If the upload fails, the Promise will reject with an error object.
+
+// In your example, the `uploadonCloudinary` function is called with the local file path of the uploaded avatar image. The function will then upload the image to Cloudinary and return a Promise that resolves to an object with the properties described above. You can then use the properties of this object to store the uploaded image in your database or use it in your application in other ways.
